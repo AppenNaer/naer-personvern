@@ -1,32 +1,232 @@
-Personvern i Nær
-Nær er laget for å hjelpe deg å holde kontakten med dem du er glad i – og for å være helt privat mens du gjør det.
-Kort fortalt
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personvern i Nær</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #FFF7F0;
+    --plum: #2A1F2E;
+    --plum-soft: rgba(42, 31, 46, 0.78);
+    --plum-muted: rgba(42, 31, 46, 0.52);
+    --honey: #E89B3C;
+    --honey-deep: #D27D1E;
+    --sage: #7C9885;
+    --card: rgba(232, 155, 60, 0.10);
+    --card-border: rgba(232, 155, 60, 0.22);
+    --rule: rgba(42, 31, 46, 0.10);
+  }
 
-Nær samler ikke inn noe om deg. Alt du skriver inn – navn, notater, hvem du har vært i kontakt med – blir værende på din egen enhet. Det finnes ingen konto, ingen innlogging og ingen server som dataene dine sendes til.
-Hva Nær ikke gjør
+  * { box-sizing: border-box; }
 
-Nær ber ikke om tilgang til kontaktene dine.
-Nær ber ikke om posisjonen din.
-Nær sender ingenting videre – ikke til oss, ikke til andre.
-Nær bruker ingen sporing, analyseverktøy eller annonsenettverk.
-Nær har ingen brukerkonto, og krever ingen registrering.
-Hvor dataene dine bor
+  html { -webkit-text-size-adjust: 100%; }
 
-Alt du legger inn lagres lokalt på enheten din. Fordi informasjonen kun finnes hos deg, kan vi som har laget Nær aldri se den, hente den fram eller gjenopprette den. Det betyr også at du selv har ansvaret for dataene: passer du på telefonen din, passer du på dem.
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--plum);
+    font-family: "Figtree", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 18px;
+    line-height: 1.72;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
 
-Vil du ta vare på en kopi, kan du bruke «Eksporter dataene mine» inne i appen. Filen som lages er ukryptert, så oppbevar den et trygt sted. Vil du fjerne alt, kan du bruke «Slett alt» – da forsvinner informasjonen fra enheten for godt.
+  .wrap {
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+  }
 
-Varsler
+  /* Logo */
+  .orb {
+    width: 96px;
+    height: 96px;
+    display: block;
+    margin: 0 auto 28px;
+  }
 
-Hvis du slår på påminnelser, lages disse lokalt på enheten din, ut fra rytmen du selv har valgt. Ingen varsler styres utenfra, og ingen informasjon forlater telefonen for å sende dem.
+  /* Headings */
+  h1 {
+    font-family: "Fraunces", Georgia, serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 1.1;
+    text-align: center;
+    margin: 0 0 14px;
+    letter-spacing: -0.01em;
+  }
 
-Endringer
+  .lede {
+    text-align: center;
+    color: var(--plum-soft);
+    font-size: 1.12rem;
+    max-width: 30em;
+    margin: 0 auto 8px;
+  }
 
-Skulle denne erklæringen endres, vil den oppdaterte versjonen ligge her.
+  h2 {
+    font-family: "Fraunces", Georgia, serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.25;
+    margin: 52px 0 14px;
+    letter-spacing: -0.005em;
+  }
 
-Kontakt
+  p { margin: 0 0 18px; }
 
-Har du spørsmål om personvern i Nær, kan du ta kontakt på:
-naerapp@icloud.com
+  strong { font-weight: 600; }
 
-Sist oppdatert: juni 2026
+  /* Summary card */
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 20px;
+    padding: 26px 28px;
+    margin: 36px 0 8px;
+  }
+  .card h2 {
+    margin-top: 0;
+    font-size: 1.3rem;
+  }
+  .card p:last-child { margin-bottom: 0; }
+
+  /* Lists */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 18px;
+  }
+  ul li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 12px;
+  }
+  ul li::before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 0.62em;
+    width: 12px;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--honey-deep);
+  }
+
+  /* Inline reference to in-app buttons */
+  .pill {
+    font-weight: 600;
+    color: var(--plum);
+  }
+
+  /* Divider */
+  .rule {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 52px 0;
+  }
+
+  /* Contact */
+  .contact {
+    text-align: center;
+  }
+  .contact a {
+    color: var(--honey-deep);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1.5px solid rgba(210, 125, 30, 0.4);
+    padding-bottom: 1px;
+  }
+  .contact a:hover {
+    border-bottom-color: var(--honey-deep);
+  }
+
+  .updated {
+    text-align: center;
+    color: var(--plum-muted);
+    font-family: "Fraunces", Georgia, serif;
+    font-style: italic;
+    font-size: 0.98rem;
+    margin-top: 44px;
+  }
+
+  @media (max-width: 480px) {
+    body { font-size: 17px; }
+    .wrap { padding: 44px 22px 80px; }
+    h1 { font-size: 2.1rem; }
+    h2 { font-size: 1.35rem; }
+    .card { padding: 22px 22px; }
+  }
+</style>
+</head>
+<body>
+  <main class="wrap">
+
+    <svg class="orb" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <radialGradient id="core" cx="50%" cy="48%" r="52%">
+          <stop offset="0%" stop-color="#3c2a1b"/>
+          <stop offset="55%" stop-color="#2a1f2e"/>
+          <stop offset="100%" stop-color="#1c1318"/>
+        </radialGradient>
+        <radialGradient id="glow" cx="50%" cy="44%" r="50%">
+          <stop offset="0%" stop-color="#E89B3C" stop-opacity="0.85"/>
+          <stop offset="100%" stop-color="#E89B3C" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <circle cx="100" cy="100" r="93" fill="none" stroke="#E89B3C" stroke-opacity="0.10" stroke-width="2"/>
+      <circle cx="100" cy="100" r="81" fill="none" stroke="#E89B3C" stroke-opacity="0.16" stroke-width="2"/>
+      <circle cx="100" cy="100" r="69" fill="none" stroke="#E89B3C" stroke-opacity="0.26" stroke-width="2.5"/>
+      <circle cx="100" cy="100" r="57" fill="none" stroke="#D27D1E" stroke-opacity="0.40" stroke-width="2.5"/>
+      <circle cx="100" cy="100" r="48" fill="url(#core)"/>
+      <circle cx="100" cy="92" r="42" fill="url(#glow)"/>
+      <circle cx="100" cy="95" r="3.6" fill="#FFE6C2"/>
+    </svg>
+
+    <h1>Personvern i Nær</h1>
+    <p class="lede">Nær er laget for å hjelpe deg å holde kontakten med dem du er glad i – og for å være helt privat mens du gjør det.</p>
+
+    <div class="card">
+      <h2>Kort fortalt</h2>
+      <p>Nær samler ikke inn noe om deg. Alt du skriver inn – navn, notater, hvem du har vært i kontakt med – blir værende på din egen enhet. Det finnes ingen konto, ingen innlogging og ingen server som dataene dine sendes til.</p>
+    </div>
+
+    <h2>Hva Nær <em>ikke</em> gjør</h2>
+    <ul>
+      <li>Nær ber ikke om tilgang til kontaktene dine.</li>
+      <li>Nær ber ikke om posisjonen din.</li>
+      <li>Nær sender ingenting videre – ikke til oss, ikke til andre.</li>
+      <li>Nær bruker ingen sporing, analyseverktøy eller annonsenettverk.</li>
+      <li>Nær har ingen brukerkonto, og krever ingen registrering.</li>
+    </ul>
+
+    <h2>Hvor dataene dine bor</h2>
+    <p>Alt du legger inn lagres lokalt på enheten din. Fordi informasjonen kun finnes hos deg, kan vi som har laget Nær aldri se den, hente den fram eller gjenopprette den. Det betyr også at du selv har ansvaret for dataene: passer du på telefonen din, passer du på dem.</p>
+    <p>Vil du ta vare på en kopi, kan du bruke <span class="pill">«Eksporter dataene mine»</span> inne i appen. Filen som lages er ukryptert, så oppbevar den et trygt sted. Vil du fjerne alt, kan du bruke <span class="pill">«Slett alt»</span> – da forsvinner informasjonen fra enheten for godt.</p>
+
+    <h2>Varsler</h2>
+    <p>Hvis du slår på påminnelser, lages disse lokalt på enheten din, ut fra rytmen du selv har valgt. Ingen varsler styres utenfra, og ingen informasjon forlater telefonen for å sende dem.</p>
+
+    <h2>Endringer</h2>
+    <p>Skulle denne erklæringen endres, vil den oppdaterte versjonen ligge her.</p>
+
+    <hr class="rule">
+
+    <div class="contact">
+      <h2>Kontakt</h2>
+      <p>Har du spørsmål om personvern i Nær, kan du ta kontakt på:<br>
+      <a href="mailto:naerapp@icloud.com">naerapp@icloud.com</a></p>
+    </div>
+
+    <p class="updated">Sist oppdatert: juni 2026</p>
+
+  </main>
+</body>
+</html>
