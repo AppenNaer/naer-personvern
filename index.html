@@ -3,214 +3,287 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Personvern i Nær</title>
+<title>Vilkår og personvern i Nær</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --paper: #FFF7F0;
-    --plum: #2A1F2E;
-    --plum-soft: rgba(42, 31, 46, 0.78);
-    --plum-muted: rgba(42, 31, 46, 0.52);
-    --honey: #E89B3C;
-    --honey-deep: #D27D1E;
-    --sage: #7C9885;
-    --card: rgba(232, 155, 60, 0.10);
-    --card-border: rgba(232, 155, 60, 0.22);
-    --rule: rgba(42, 31, 46, 0.10);
-  }
+:root {
+--paper: #FFF7F0;
+--plum: #2A1F2E;
+--plum-soft: rgba(42, 31, 46, 0.78);
+--plum-muted: rgba(42, 31, 46, 0.52);
+--honey: #E89B3C;
+--honey-deep: #D27D1E;
+--sage: #7C9885;
+--card: rgba(232, 155, 60, 0.10);
+--card-border: rgba(232, 155, 60, 0.22);
+--rule: rgba(42, 31, 46, 0.10);
+}
 
-  * { box-sizing: border-box; }
+* { box-sizing: border-box; }
 
-  html { -webkit-text-size-adjust: 100%; }
+html { -webkit-text-size-adjust: 100%; }
 
-  body {
-    margin: 0;
-    background: var(--paper);
-    color: var(--plum);
-    font-family: "Figtree", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    font-size: 18px;
-    line-height: 1.72;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-  }
+body {
+margin: 0;
+background: var(--paper);
+color: var(--plum);
+font-family: "Figtree", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+font-size: 18px;
+line-height: 1.72;
+-webkit-font-smoothing: antialiased;
+text-rendering: optimizeLegibility;
+}
 
-  .wrap {
-    max-width: 660px;
-    margin: 0 auto;
-    padding: 56px 24px 96px;
-  }
+.wrap {
+max-width: 660px;
+margin: 0 auto;
+padding: 56px 24px 96px;
+}
 
-  .orb {
-    width: 96px;
-    height: 96px;
-    display: block;
-    margin: 0 auto 28px;
-  }
+.orb {
+width: 96px;
+height: 96px;
+display: block;
+margin: 0 auto 28px;
+}
 
-  h1 {
-    font-family: "Fraunces", Georgia, serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-size: 2.5rem;
-    line-height: 1.12;
-    letter-spacing: -0.01em;
-    text-align: center;
-    margin: 0 0 14px;
-  }
+h1 {
+font-family: "Fraunces", Georgia, serif;
+font-optical-sizing: auto;
+font-weight: 600;
+font-size: 2.5rem;
+line-height: 1.12;
+letter-spacing: -0.01em;
+text-align: center;
+margin: 0 0 14px;
+}
 
-  .lede {
-    text-align: center;
-    color: var(--plum-soft);
-    font-size: 1.12rem;
-    max-width: 30ch;
-    margin: 0 auto 44px;
-  }
+.lede {
+text-align: center;
+color: var(--plum-soft);
+font-size: 1.12rem;
+max-width: 44ch;
+margin: 0 auto 44px;
+}
 
-  h2 {
-    font-family: "Fraunces", Georgia, serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-size: 1.5rem;
-    line-height: 1.2;
-    margin: 44px 0 12px;
-  }
+h2 {
+font-family: "Fraunces", Georgia, serif;
+font-optical-sizing: auto;
+font-weight: 600;
+font-size: 1.5rem;
+line-height: 1.2;
+margin: 44px 0 12px;
+}
 
-  p { margin: 0 0 16px; }
+.eyebrow {
+font-family: "Fraunces", Georgia, serif;
+font-style: italic;
+font-size: 1rem;
+color: var(--plum-muted);
+text-align: center;
+margin: 0 0 4px;
+}
 
-  .card {
-    background: var(--card);
-    border: 1px solid var(--card-border);
-    border-radius: 18px;
-    padding: 26px 28px 10px;
-    margin: 0 0 20px;
-  }
+.part {
+border: none;
+border-top: 1px solid var(--rule);
+margin: 56px 0 40px;
+}
 
-  .card h2 { margin-top: 0; }
+p { margin: 0 0 16px; }
 
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 20px;
-  }
+.card {
+background: var(--card);
+border: 1px solid var(--card-border);
+border-radius: 18px;
+padding: 26px 28px 10px;
+margin: 0 0 20px;
+}
 
-  li {
-    position: relative;
-    padding-left: 26px;
-    margin: 0 0 14px;
-    color: var(--plum-soft);
-  }
+.card h2 { margin-top: 0; }
 
-  li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0.72em;
-    width: 12px;
-    height: 2px;
-    border-radius: 2px;
-    background: var(--honey);
-  }
+ul {
+list-style: none;
+padding: 0;
+margin: 0 0 20px;
+}
 
-  .pill {
-    display: inline;
-    font-weight: 600;
-    color: var(--plum);
-    background: var(--card);
-    border-radius: 6px;
-    padding: 1px 6px;
-    white-space: nowrap;
-  }
+li {
+position: relative;
+padding-left: 26px;
+margin: 0 0 14px;
+color: var(--plum-soft);
+}
 
-  .rule {
-    border: none;
-    border-top: 1px solid var(--rule);
-    margin: 48px 0;
-  }
+li::before {
+content: "";
+position: absolute;
+left: 0;
+top: 0.72em;
+width: 12px;
+height: 2px;
+border-radius: 2px;
+background: var(--honey);
+}
 
-  .contact { text-align: center; }
+.help li { margin: 0 0 12px; }
 
-  .contact a {
-    color: var(--plum);
-    font-weight: 600;
-    text-decoration: none;
-    border-bottom: 2px solid var(--honey);
-    padding-bottom: 1px;
-  }
+.help a,
+.help strong {
+font-weight: 600;
+color: var(--plum);
+}
 
-  .updated {
-    text-align: center;
-    color: var(--plum-muted);
-    font-style: italic;
-    font-family: "Fraunces", Georgia, serif;
-    margin-top: 40px;
-  }
+.help a {
+text-decoration: none;
+border-bottom: 2px solid var(--honey);
+padding-bottom: 1px;
+}
 
-  @media (max-width: 480px) {
-    body { font-size: 17px; }
-    .wrap { padding: 44px 20px 80px; }
-    h1 { font-size: 2.1rem; }
-    h2 { font-size: 1.35rem; }
-    .card { padding: 22px 22px 8px; }
-  }
+.pill {
+display: inline;
+font-weight: 600;
+color: var(--plum);
+background: var(--card);
+border-radius: 6px;
+padding: 1px 6px;
+white-space: nowrap;
+}
+
+.rule {
+border: none;
+border-top: 1px solid var(--rule);
+margin: 48px 0;
+}
+
+.contact { text-align: center; }
+
+.contact a,
+.updated a {
+color: var(--plum);
+font-weight: 600;
+text-decoration: none;
+border-bottom: 2px solid var(--honey);
+padding-bottom: 1px;
+}
+
+.agree {
+font-family: "Fraunces", Georgia, serif;
+font-style: italic;
+font-size: 1.12rem;
+color: var(--plum-soft);
+margin: 28px 0 0;
+}
+
+.updated {
+text-align: center;
+color: var(--plum-muted);
+font-style: italic;
+font-family: "Fraunces", Georgia, serif;
+margin-top: 40px;
+}
+
+@media (max-width: 480px) {
+body { font-size: 17px; }
+.wrap { padding: 44px 20px 80px; }
+h1 { font-size: 2.1rem; }
+h2 { font-size: 1.35rem; }
+.card { padding: 22px 22px 8px; }
+}
 </style>
 </head>
 <body>
-  <main class="wrap">
+<main class="wrap">
 
-    <svg class="orb" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <circle cx="48" cy="48" r="46" stroke="#E89B3C" stroke-opacity="0.20" stroke-width="1.5"/>
-      <circle cx="48" cy="48" r="38" stroke="#E89B3C" stroke-opacity="0.30" stroke-width="1.5"/>
-      <circle cx="48" cy="48" r="30" stroke="#E89B3C" stroke-opacity="0.45" stroke-width="1.5"/>
-      <circle cx="48" cy="48" r="22" fill="#2A1F2E"/>
-      <circle cx="48" cy="46" r="7" fill="#E89B3C" fill-opacity="0.9"/>
-      <circle cx="48" cy="46" r="13" fill="#E89B3C" fill-opacity="0.18"/>
-    </svg>
+<svg class="orb" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<circle cx="48" cy="48" r="46" stroke="#E89B3C" stroke-opacity="0.20" stroke-width="1.5"/>
+<circle cx="48" cy="48" r="38" stroke="#E89B3C" stroke-opacity="0.30" stroke-width="1.5"/>
+<circle cx="48" cy="48" r="30" stroke="#E89B3C" stroke-opacity="0.45" stroke-width="1.5"/>
+<circle cx="48" cy="48" r="22" fill="#2A1F2E"/>
+<circle cx="48" cy="46" r="7" fill="#E89B3C" fill-opacity="0.9"/>
+<circle cx="48" cy="46" r="13" fill="#E89B3C" fill-opacity="0.18"/>
+</svg>
 
-    <h1>Personvern i Nær</h1>
-    <p class="lede">Nær er laget for å hjelpe deg å holde kontakten med dem du er glad i – og for å være helt privat mens du gjør det.</p>
+<h1>Vilkår og personvern i Nær</h1>
+<p class="lede">Vi prøver å holde dette kort og ærlig – slik resten av Nær er. Nær er laget for å hjelpe deg å holde kontakten med dem du er glad i, og for å være helt privat mens du gjør det.</p>
 
-    <div class="card">
-      <h2>Kort fortalt</h2>
-      <p>Nær samler ikke inn noe om deg. Alt du skriver inn – navn, notater, telefonnummer du eventuelt legger til, og hvem du har vært i kontakt med – blir værende på din egen enhet. Det finnes ingen konto, ingen innlogging og ingen server som dataene dine sendes til.</p>
-    </div>
+<hr class="part">
+<p class="eyebrow">Del 1</p>
+<h2 style="text-align:center;margin-top:0">Slik passer Nær på deg</h2>
 
-    <h2>Hva Nær ikke gjør</h2>
-    <ul>
-      <li>Nær ber aldri om tilgang til kontaktlisten din.</li>
-      <li>Nær ber ikke om posisjonen din.</li>
-      <li>Nær sender ingenting videre – ikke til oss, ikke til andre.</li>
-      <li>Nær bruker ingen sporing, analyseverktøy eller annonsenettverk.</li>
-      <li>Nær har ingen brukerkonto, og krever ingen registrering.</li>
-    </ul>
+<div class="card">
+<p>Alt du skriver inn i Nær – menneskene dine, notatene, det du logger, og telefonnummer du eventuelt legger til – blir værende på denne enheten. Denne versjonen av Nær har ingen konto og ingen server, og henter ikke inn kontaktlisten din, posisjonen din eller annen informasjon. Den sender ingenting videre.</p>
+</div>
 
-    <h2>Telefonnummer, hvis du vil</h2>
-    <p>Vil du kunne sende melding eller ringe rett fra et personkort, kan du legge til et telefonnummer. Du kan skrive det selv, eller plukke det fra Apples egen kontaktvelger. Velger du fra kontaktene, får Nær bare det ene nummeret du velger – aldri resten av kontaktlisten din. Nummeret blir liggende lokalt, som alt annet.</p>
+<h2>Hva Nær ikke gjør</h2>
+<ul>
+<li>Nær ber aldri om tilgang til kontaktlisten din.</li>
+<li>Nær ber ikke om posisjonen din.</li>
+<li>Nær sender ingenting videre – ikke til oss, ikke til andre.</li>
+<li>Nær bruker ingen sporing, analyseverktøy eller annonsenettverk.</li>
+<li>Nær har ingen brukerkonto, og krever ingen registrering.</li>
+</ul>
 
-    <h2>Hvor dataene dine bor</h2>
-    <p>Alt du legger inn lagres lokalt på enheten din. Fordi informasjonen kun finnes hos deg, kan vi som har laget Nær aldri se den, hente den fram eller gjenopprette den. Det betyr også at du selv har ansvaret for dataene: passer du på telefonen din, passer du på dem.</p>
-    <p>Vil du ta vare på en kopi, kan du bruke <span class="pill">«Eksporter dataene mine»</span> inne i appen. Filen som lages er ukryptert, så oppbevar den et trygt sted. Vil du fjerne alt, kan du bruke <span class="pill">«Slett alt»</span> – da forsvinner informasjonen fra enheten for godt.</p>
+<h2>Telefonnummer, hvis du vil</h2>
+<p>Vil du kunne sende melding eller ringe rett fra et personkort, kan du legge til et telefonnummer. Du kan skrive det selv, eller plukke det fra Apples egen kontaktvelger. Velger du fra kontaktene, får Nær bare det ene nummeret du velger – aldri resten av kontaktlisten din. Nummeret blir liggende lokalt, som alt annet.</p>
 
-    <h2>Widget</h2>
-    <p>Legger du til Nær-widgeten på hjemskjermen, viser den et lite utdrag – et fornavn og dagens hilsen. Dette utdraget blir også liggende på enheten din, og forlater den aldri.</p>
+<h2>Hvor dataene dine bor</h2>
+<p>Alt du legger inn lagres lokalt på enheten din. Fordi informasjonen kun finnes hos deg, kan vi som har laget Nær aldri se den, hente den fram eller gjenopprette den. Det betyr også at du selv har ansvaret for dataene: passer du på telefonen din, passer du på dem.</p>
+<p>Vil du ta vare på en kopi, kan du bruke <span class="pill">«Eksporter dataene mine»</span> inne i appen. Filen som lages er ukryptert, så oppbevar den et trygt sted. Vil du fjerne alt, kan du bruke <span class="pill">«Slett alt»</span> – da forsvinner informasjonen fra enheten for godt.</p>
 
-    <h2>Varsler</h2>
-    <p>Hvis du slår på påminnelser, lages disse lokalt på enheten din, ut fra rytmen du selv har valgt. Ingen varsler styres utenfra, og ingen informasjon forlater telefonen for å sende dem.</p>
+<h2>Widget</h2>
+<p>Legger du til Nær-widgeten på hjemskjermen, viser den et lite utdrag – et fornavn og dagens hilsen. Dette utdraget blir også liggende på enheten din, og forlater den aldri.</p>
 
-    <h2>Endringer</h2>
-    <p>Skulle denne erklæringen endres, vil den oppdaterte versjonen ligge her.</p>
+<h2>Varsler</h2>
+<p>Hvis du slår på påminnelser, lages disse lokalt på enheten din, ut fra rytmen du selv har valgt. Ingen varsler styres utenfra, og ingen informasjon forlater telefonen for å sende dem.</p>
 
-    <hr class="rule">
+<hr class="part">
+<p class="eyebrow">Del 2</p>
+<h2 style="text-align:center;margin-top:0">Vilkår for bruk</h2>
 
-    <div class="contact">
-      <h2>Kontakt</h2>
-      <p>Har du spørsmål om personvern i Nær, kan du ta kontakt på:<br>
-      <a href="mailto:naerapp@icloud.com">naerapp@icloud.com</a></p>
-    </div>
+<h2>Hva Nær er – og ikke er</h2>
+<p>Nær er en enkel hjelp til å holde kontakten med dem du er glad i. Den er ikke helsehjelp, ikke terapi, og ikke et verktøy for kriser.</p>
 
-    <p class="updated">Sist oppdatert: 5. juli 2026</p>
+<div class="card">
+<p>Har du det vanskelig, fortjener du ekte hjelp:</p>
+<ul class="help">
+<li><strong>Fastlegen</strong> din – start der.</li>
+<li><a href="tel:116123">116 123</a> Mental Helse, hele døgnet.</li>
+<li><a href="tel:116117">116 117</a> legevakt.</li>
+<li><a href="tel:113">113</a> ved akutt fare.</li>
+</ul>
+</div>
 
-  </main>
+<h2>Hilsenene er forslag – du velger</h2>
+<p>Nær kan vise deg ferdige forslag til hilsener for å gjøre det lettere å ta kontakt. Forslagene er valgfrie, og Nær skriver ikke noe på egen hånd. Du bestemmer alltid selv hva du sender, hvordan, og til hvem – og det du sender, er ditt eget ansvar. Et vennlig ord kan lande ulikt fra menneske til menneske, og Nær kan verken vite eller styre hvordan en melding blir mottatt.</p>
+
+<h2>Sender du oss et forslag</h2>
+<p>Velger du å sende et forslag via <span class="pill">«Din Nær»</span>, skjer det gjennom din egen e-post – og da når meldingen din fram til den som lager Nær, akkurat som en vanlig e-post. Du velger selv hva du deler.</p>
+
+<h2>Appen leveres som den er</h2>
+<p>Nær er gratis og gis ut i beste mening, «som den er», uten garantier av noe slag. I den grad gjeldende lov tillater det, kan ikke den som tilbyr Nær holdes ansvarlig for tap, skade eller følger som måtte oppstå av bruk av appen – verken i relasjoner, i kommunikasjon eller på annen måte. Du bruker Nær på eget grunnlag.</p>
+
+<h2>Hvis noe endrer seg</h2>
+<p>Disse vilkårene kan bli oppdatert. Bruker du Nær videre etter en endring, gjelder de oppdaterte vilkårene. Nær er i dag et altruistisk prosjekt skapt av Mohammad Yousaf; skulle ansvaret for appen senere overtas av andre, vil det fremgå her.</p>
+
+<h2>Norsk lov</h2>
+<p>Disse vilkårene følger norsk lov, og eventuelle tvister hører hjemme ved norske domstoler.</p>
+
+<p class="agree">Ved å bruke Nær sier du deg enig i dette.</p>
+
+<hr class="rule">
+
+<div class="contact">
+<h2>Spørsmål om personvern?</h2>
+<p>Har du spørsmål om personvern i Nær, kan du ta kontakt på:<br>
+<a href="mailto:naerapp@icloud.com">naerapp@icloud.com</a></p>
+</div>
+
+<p class="updated">Sist oppdatert: 27. juli 2026.<br>
+Nær har nå en nettside: <a href="https://appennaer.no">appennaer.no</a></p>
+
+</main>
 </body>
 </html>
