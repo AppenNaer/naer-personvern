@@ -3,22 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="refresh" content="0; url=https://appennaer.no/personvern/">
+<link rel="canonical" href="https://appennaer.no/personvern/">
 <title>Vilkår og personvern i Nær</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root {
 --paper: #FFF7F0;
 --plum: #2A1F2E;
 --plum-soft: rgba(42, 31, 46, 0.78);
---plum-muted: rgba(42, 31, 46, 0.52);
 --honey: #E89B3C;
---honey-deep: #D27D1E;
---sage: #7C9885;
---card: rgba(232, 155, 60, 0.10);
---card-border: rgba(232, 155, 60, 0.22);
---rule: rgba(42, 31, 46, 0.10);
 }
 
 * { box-sizing: border-box; }
@@ -37,9 +33,10 @@ text-rendering: optimizeLegibility;
 }
 
 .wrap {
-max-width: 660px;
+max-width: 480px;
 margin: 0 auto;
-padding: 56px 24px 96px;
+padding: 96px 24px;
+text-align: center;
 }
 
 .orb {
@@ -53,144 +50,29 @@ h1 {
 font-family: "Fraunces", Georgia, serif;
 font-optical-sizing: auto;
 font-weight: 600;
-font-size: 2.5rem;
-line-height: 1.12;
+font-size: 2rem;
+line-height: 1.15;
 letter-spacing: -0.01em;
-text-align: center;
 margin: 0 0 14px;
 }
 
-.lede {
-text-align: center;
+p {
 color: var(--plum-soft);
-font-size: 1.12rem;
-max-width: 44ch;
-margin: 0 auto 44px;
+margin: 0 0 24px;
 }
 
-h2 {
-font-family: "Fraunces", Georgia, serif;
-font-optical-sizing: auto;
-font-weight: 600;
-font-size: 1.5rem;
-line-height: 1.2;
-margin: 44px 0 12px;
-}
-
-.eyebrow {
-font-family: "Fraunces", Georgia, serif;
-font-style: italic;
-font-size: 1rem;
-color: var(--plum-muted);
-text-align: center;
-margin: 0 0 4px;
-}
-
-.part {
-border: none;
-border-top: 1px solid var(--rule);
-margin: 56px 0 40px;
-}
-
-p { margin: 0 0 16px; }
-
-.card {
-background: var(--card);
-border: 1px solid var(--card-border);
-border-radius: 18px;
-padding: 26px 28px 10px;
-margin: 0 0 20px;
-}
-
-.card h2 { margin-top: 0; }
-
-ul {
-list-style: none;
-padding: 0;
-margin: 0 0 20px;
-}
-
-li {
-position: relative;
-padding-left: 26px;
-margin: 0 0 14px;
-color: var(--plum-soft);
-}
-
-li::before {
-content: "";
-position: absolute;
-left: 0;
-top: 0.72em;
-width: 12px;
-height: 2px;
-border-radius: 2px;
-background: var(--honey);
-}
-
-.help li { margin: 0 0 12px; }
-
-.help a,
-.help strong {
-font-weight: 600;
-color: var(--plum);
-}
-
-.help a {
-text-decoration: none;
-border-bottom: 2px solid var(--honey);
-padding-bottom: 1px;
-}
-
-.pill {
-display: inline;
-font-weight: 600;
-color: var(--plum);
-background: var(--card);
-border-radius: 6px;
-padding: 1px 6px;
-white-space: nowrap;
-}
-
-.rule {
-border: none;
-border-top: 1px solid var(--rule);
-margin: 48px 0;
-}
-
-.contact { text-align: center; }
-
-.contact a,
-.updated a {
+a {
 color: var(--plum);
 font-weight: 600;
 text-decoration: none;
 border-bottom: 2px solid var(--honey);
 padding-bottom: 1px;
-}
-
-.agree {
-font-family: "Fraunces", Georgia, serif;
-font-style: italic;
-font-size: 1.12rem;
-color: var(--plum-soft);
-margin: 28px 0 0;
-}
-
-.updated {
-text-align: center;
-color: var(--plum-muted);
-font-style: italic;
-font-family: "Fraunces", Georgia, serif;
-margin-top: 40px;
 }
 
 @media (max-width: 480px) {
 body { font-size: 17px; }
-.wrap { padding: 44px 20px 80px; }
-h1 { font-size: 2.1rem; }
-h2 { font-size: 1.35rem; }
-.card { padding: 22px 22px 8px; }
+.wrap { padding: 72px 20px; }
+h1 { font-size: 1.75rem; }
 }
 </style>
 </head>
@@ -207,87 +89,9 @@ h2 { font-size: 1.35rem; }
 </svg>
 
 <h1>Vilkår og personvern i Nær</h1>
-<p class="lede">Vi prøver å holde dette kort og ærlig — slik resten av Nær er. Nær er laget for å hjelpe deg å holde kontakten med dem du er glad i, og for å være helt privat mens du gjør det.</p>
-
-<hr class="part">
-<p class="eyebrow">Del 1</p>
-<h2 style="text-align:center;margin-top:0">Slik passer Nær på deg</h2>
-
-<div class="card">
-<p>Alt du skriver inn i Nær — menneskene dine, notatene, det du logger, og telefonnummer du eventuelt legger til — lagres på telefonen din. Denne versjonen av Nær har ingen konto og ingen server, og henter ikke inn kontaktlisten din, posisjonen din eller annen informasjon. Den sender ingenting til oss, og ingenting til andre.</p>
-</div>
-
-<h2>Hva Nær ikke gjør</h2>
-<ul>
-<li>Nær ber aldri om tilgang til kontaktlisten din.</li>
-<li>Nær ber ikke om posisjonen din.</li>
-<li>Nær sender ingenting videre – ikke til oss, ikke til andre.</li>
-<li>Nær bruker ingen sporing, analyseverktøy eller annonsenettverk.</li>
-<li>Nær har ingen brukerkonto, og krever ingen registrering.</li>
-<li>Nær har ingen tilgang til iCloud-kontoen din.</li>
-</ul>
-
-<h2>Telefonnummer, hvis du vil</h2>
-<p>Vil du kunne sende melding eller ringe rett fra et personkort, kan du legge til et telefonnummer. Du kan skrive det selv, eller plukke det fra Apples egen kontaktvelger. Velger du fra kontaktene, får Nær bare det ene nummeret du velger – aldri resten av kontaktlisten din. Nummeret lagres på telefonen din, som alt annet.</p>
-
-<h2>Hvor dataene dine bor</h2>
-<p>Alt du legger inn lagres på telefonen din. Fordi informasjonen aldri går til oss, kan vi som har laget Nær aldri se den, hente den fram eller gjenopprette den. Det betyr også at du selv har ansvaret for dataene: passer du på telefonen din, passer du på dem.</p>
-<p>Vil du ta vare på en kopi, kan du bruke <span class="pill">«Eksporter dataene mine»</span> inne i appen. Filen som lages er ukryptert, så oppbevar den et trygt sted. Vil du fjerne alt, kan du bruke <span class="pill">«Slett alt»</span> – da forsvinner informasjonen fra enheten for godt.</p>
-
-<h2>Sikkerhetskopi</h2>
-<p>iPhone kan ta sikkerhetskopi av seg selv til iCloud. Har du slått det på, tas Nær med — på samme måte som andre apper på telefonen. Kopien ligger på din egen iCloud-konto, ikke hos oss, og vi har ingen tilgang til den. For de fleste er dette en fordel: bytter du telefon, følger menneskene dine med.</p>
-<p>Vil du heller ikke ha Nær med i kopien, bestemmer du selv: Innstillinger → navnet ditt → iCloud → Administrer lagring → Sikkerhetskopier → velg telefonen din, og slå av Nær i lista. Da slettes også kopien som allerede ligger der.</p>
-<p>iCloud-sikkerhetskopien er kryptert både på vei og hos Apple. Med Apples standardinnstilling har Apple likevel nøklene, og kan i prinsippet åpne kopien. Slår du på Avansert databeskyttelse i iCloud-innstillingene dine, blir kopien ende-til-ende-kryptert — da har bare du nøkkelen.</p>
-
-<h2>Widget</h2>
-<p>Legger du til Nær-widgeten på hjemskjermen, viser den et lite utdrag – et fornavn og dagens hilsen. Dette utdraget lagres også på telefonen din, og deles ikke med noen.</p>
-
-<h2>Varsler</h2>
-<p>Hvis du slår på påminnelser, lages disse lokalt på enheten din, ut fra rytmen du selv har valgt. Ingen varsler styres utenfra, og ingen informasjon forlater telefonen for å sende dem.</p>
-
-<hr class="part">
-<p class="eyebrow">Del 2</p>
-<h2 style="text-align:center;margin-top:0">Vilkår for bruk</h2>
-
-<h2>Hva Nær er — og ikke er</h2>
-<p>Nær er en enkel hjelp til å holde kontakten med dem du er glad i. Den er ikke helsehjelp, ikke terapi, og ikke et verktøy for kriser.</p>
-
-<div class="card">
-<p>Har du det vanskelig, fortjener du ekte hjelp:</p>
-<ul class="help">
-<li><strong>Fastlegen</strong> din — start der.</li>
-<li><a href="tel:116123">116 123</a> Mental Helse, hele døgnet.</li>
-<li><a href="tel:116117">116 117</a> legevakt.</li>
-<li><a href="tel:113">113</a> ved akutt fare.</li>
-</ul>
-</div>
-
-<h2>Hilsenene er forslag — du velger</h2>
-<p>Nær kan vise deg ferdige forslag til hilsener for å gjøre det lettere å ta kontakt. Forslagene er valgfrie, og Nær skriver ikke noe på egen hånd. Du bestemmer alltid selv hva du sender, hvordan, og til hvem — og det du sender, er ditt eget ansvar. Et vennlig ord kan lande ulikt fra menneske til menneske, og Nær kan verken vite eller styre hvordan en melding blir mottatt.</p>
-
-<h2>Sender du oss et forslag</h2>
-<p>Velger du å sende et forslag via <span class="pill">«Din Nær»</span>, skjer det gjennom din egen e-post — og da når meldingen din fram til den som lager Nær, akkurat som en vanlig e-post. Du velger selv hva du deler.</p>
-
-<h2>Appen leveres som den er</h2>
-<p>Nær er gratis og gis ut i beste mening, «som den er», uten garantier av noe slag. I den grad gjeldende lov tillater det, kan ikke den som tilbyr Nær holdes ansvarlig for tap, skade eller følger som måtte oppstå av bruk av appen — verken i relasjoner, i kommunikasjon eller på annen måte. Du bruker Nær på eget grunnlag.</p>
-
-<h2>Hvis noe endrer seg</h2>
-<p>Disse vilkårene kan bli oppdatert. Bruker du Nær videre etter en endring, gjelder de oppdaterte vilkårene. Nær er i dag et altruistisk prosjekt skapt av Mohammad Yousaf; skulle ansvaret for appen senere overtas av andre, vil det fremgå her.</p>
-
-<h2>Norsk lov</h2>
-<p>Disse vilkårene følger norsk lov, og eventuelle tvister hører hjemme ved norske domstoler.</p>
-
-<p class="agree">Ved å bruke Nær sier du deg enig i dette.</p>
-
-<hr class="rule">
-
-<div class="contact">
-<h2>Spørsmål om personvern?</h2>
-<p>Har du spørsmål om personvern i Nær, kan du ta kontakt på <a href="mailto:naerapp@icloud.com">naerapp@icloud.com</a>.</p>
-</div>
-
-<p class="updated">Sist oppdatert: 10. august 2026.<br>
-Nær har nå en nettside: <a href="https://appennaer.no">appennaer.no</a></p>
+<p>Denne siden har flyttet til Nærs egen nettside. Du sendes videre nå.</p>
+<p>Skjer det ikke av seg selv:<br>
+<a href="https://appennaer.no/personvern/">Les vilkår og personvern</a></p>
 
 </main>
 </body>
