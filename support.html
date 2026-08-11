@@ -3,173 +3,96 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hjelp og kontakt – Nær</title>
+<meta http-equiv="refresh" content="0; url=https://appennaer.no/hjelp/">
+<link rel="canonical" href="https://appennaer.no/hjelp/">
+<title>Hjelp og kontakt i Nær</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --paper: #FFF7F0;
-    --plum: #2A1F2E;
-    --plum-soft: rgba(42, 31, 46, 0.78);
-    --plum-muted: rgba(42, 31, 46, 0.52);
-    --honey: #E89B3C;
-    --honey-deep: #D27D1E;
-    --sage: #7C9885;
-    --card: rgba(232, 155, 60, 0.10);
-    --card-border: rgba(232, 155, 60, 0.22);
-    --rule: rgba(42, 31, 46, 0.10);
-  }
+:root {
+--paper: #FFF7F0;
+--plum: #2A1F2E;
+--plum-soft: rgba(42, 31, 46, 0.78);
+--honey: #E89B3C;
+}
 
-  * { box-sizing: border-box; }
-  html { -webkit-text-size-adjust: 100%; }
+* { box-sizing: border-box; }
 
-  body {
-    margin: 0;
-    background: var(--paper);
-    color: var(--plum);
-    font-family: "Figtree", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    font-size: 18px;
-    line-height: 1.72;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-  }
+html { -webkit-text-size-adjust: 100%; }
 
-  .wrap { max-width: 660px; margin: 0 auto; padding: 56px 24px 96px; }
+body {
+margin: 0;
+background: var(--paper);
+color: var(--plum);
+font-family: "Figtree", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+font-size: 18px;
+line-height: 1.72;
+-webkit-font-smoothing: antialiased;
+text-rendering: optimizeLegibility;
+}
 
-  .orb { width: 96px; height: 96px; display: block; margin: 0 auto 28px; }
+.wrap {
+max-width: 480px;
+margin: 0 auto;
+padding: 96px 24px;
+text-align: center;
+}
 
-  h1 {
-    font-family: "Fraunces", Georgia, serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-size: 2.5rem;
-    line-height: 1.1;
-    text-align: center;
-    margin: 0 0 14px;
-    letter-spacing: -0.01em;
-  }
+.orb {
+width: 96px;
+height: 96px;
+display: block;
+margin: 0 auto 28px;
+}
 
-  .lede {
-    text-align: center;
-    color: var(--plum-soft);
-    font-size: 1.12rem;
-    max-width: 30em;
-    margin: 0 auto 8px;
-  }
+h1 {
+font-family: "Fraunces", Georgia, serif;
+font-optical-sizing: auto;
+font-weight: 600;
+font-size: 2rem;
+line-height: 1.15;
+letter-spacing: -0.01em;
+margin: 0 0 14px;
+}
 
-  h2 {
-    font-family: "Fraunces", Georgia, serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-size: 1.5rem;
-    line-height: 1.25;
-    margin: 52px 0 14px;
-    letter-spacing: -0.005em;
-  }
+p {
+color: var(--plum-soft);
+margin: 0 0 24px;
+}
 
-  .q {
-    font-weight: 600;
-    font-size: 1.18rem;
-    margin: 30px 0 6px;
-  }
+a {
+color: var(--plum);
+font-weight: 600;
+text-decoration: none;
+border-bottom: 2px solid var(--honey);
+padding-bottom: 1px;
+}
 
-  p { margin: 0 0 18px; }
-  strong { font-weight: 600; }
-
-  .card {
-    background: var(--card);
-    border: 1px solid var(--card-border);
-    border-radius: 20px;
-    padding: 26px 28px;
-    margin: 36px 0 8px;
-  }
-  .card h2 { margin-top: 0; font-size: 1.3rem; }
-  .card p:last-child { margin-bottom: 0; }
-
-  .pill { font-weight: 600; color: var(--plum); }
-
-  a { color: var(--honey-deep); font-weight: 600; text-decoration: none;
-      border-bottom: 1.5px solid rgba(210, 125, 30, 0.4); padding-bottom: 1px; }
-  a:hover { border-bottom-color: var(--honey-deep); }
-
-  .rule { border: none; border-top: 1px solid var(--rule); margin: 52px 0; }
-
-  .contact { text-align: center; }
-
-  .updated {
-    text-align: center;
-    color: var(--plum-muted);
-    font-family: "Fraunces", Georgia, serif;
-    font-style: italic;
-    font-size: 0.98rem;
-    margin-top: 44px;
-  }
-
-  @media (max-width: 480px) {
-    body { font-size: 17px; }
-    .wrap { padding: 44px 22px 80px; }
-    h1 { font-size: 2.1rem; }
-    h2 { font-size: 1.35rem; }
-    .card { padding: 22px 22px; }
-  }
+@media (max-width: 480px) {
+body { font-size: 17px; }
+.wrap { padding: 72px 20px; }
+h1 { font-size: 1.75rem; }
+}
 </style>
 </head>
 <body>
-  <main class="wrap">
+<main class="wrap">
 
-    <svg class="orb" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <defs>
-        <radialGradient id="core" cx="50%" cy="48%" r="52%">
-          <stop offset="0%" stop-color="#3c2a1b"/>
-          <stop offset="55%" stop-color="#2a1f2e"/>
-          <stop offset="100%" stop-color="#1c1318"/>
-        </radialGradient>
-        <radialGradient id="glow" cx="50%" cy="44%" r="50%">
-          <stop offset="0%" stop-color="#E89B3C" stop-opacity="0.85"/>
-          <stop offset="100%" stop-color="#E89B3C" stop-opacity="0"/>
-        </radialGradient>
-      </defs>
-      <circle cx="100" cy="100" r="93" fill="none" stroke="#E89B3C" stroke-opacity="0.10" stroke-width="2"/>
-      <circle cx="100" cy="100" r="81" fill="none" stroke="#E89B3C" stroke-opacity="0.16" stroke-width="2"/>
-      <circle cx="100" cy="100" r="69" fill="none" stroke="#E89B3C" stroke-opacity="0.26" stroke-width="2.5"/>
-      <circle cx="100" cy="100" r="57" fill="none" stroke="#D27D1E" stroke-opacity="0.40" stroke-width="2.5"/>
-      <circle cx="100" cy="100" r="48" fill="url(#core)"/>
-      <circle cx="100" cy="92" r="42" fill="url(#glow)"/>
-      <circle cx="100" cy="95" r="3.6" fill="#FFE6C2"/>
-    </svg>
+<svg class="orb" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<circle cx="48" cy="48" r="46" stroke="#E89B3C" stroke-opacity="0.20" stroke-width="1.5"/>
+<circle cx="48" cy="48" r="38" stroke="#E89B3C" stroke-opacity="0.30" stroke-width="1.5"/>
+<circle cx="48" cy="48" r="30" stroke="#E89B3C" stroke-opacity="0.45" stroke-width="1.5"/>
+<circle cx="48" cy="48" r="22" fill="#2A1F2E"/>
+<circle cx="48" cy="46" r="7" fill="#E89B3C" fill-opacity="0.9"/>
+<circle cx="48" cy="46" r="13" fill="#E89B3C" fill-opacity="0.18"/>
+</svg>
 
-    <h1>Hjelp og kontakt</h1>
-    <p class="lede">Nær er laget for å være liten og enkel. Skulle du likevel lure på noe, finner du svar her – og du kan alltid ta direkte kontakt.</p>
+<h1>Hjelp og kontakt</h1>
+<p>Denne siden har flyttet til Nærs egen nettside. Du sendes videre nå.</p>
+<p>Skjer det ikke av seg selv:<br>
+<a href="https://appennaer.no/hjelp/">Gå til Hjelp og kontakt</a></p>
 
-    <div class="card">
-      <h2>Kort fortalt</h2>
-      <p>Du trenger ingen konto, og det er ingenting å logge inn på. De fleste spørsmål handler om de samme få tingene, så her er de.</p>
-    </div>
-
-    <p class="q">Hvordan tar jeg vare på dataene mine?</p>
-    <p>Inne i appen, under <span class="pill">Mer</span>, velger du <span class="pill">«Eksporter dataene mine»</span>. Da lages en kopi du kan oppbevare et trygt sted.</p>
-
-    <p class="q">Hvordan fjerner jeg alt?</p>
-    <p>Under <span class="pill">Mer</span> finner du <span class="pill">«Slett alt»</span>. Da forsvinner alt du har lagt inn fra enheten for godt.</p>
-
-    <p class="q">Får jeg for mange påminnelser?</p>
-    <p>Under <span class="pill">Mer</span> kan du skru av <span class="pill">«Varsomme påminnelser»</span> og <span class="pill">«Daglig hilsen»</span> når som helst. Nær maser aldri, og bruker aldri røde tall.</p>
-
-    <p class="q">Hva med personvernet mitt?</p>
-    <p>Alt du legger inn blir værende på telefonen din, og ingenting sendes noe sted. Du kan lese mer på <a href="index.html">personvernsiden</a>.</p>
-
-    <hr class="rule">
-
-    <div class="contact">
-      <h2>Trenger du å snakke med noen?</h2>
-      <p>Har du et spørsmål, en tilbakemelding, eller noe som ikke virker som det skal, send meg gjerne en e-post:<br>
-      <a href="mailto:naerapp@icloud.com">naerapp@icloud.com</a></p>
-      <p>Jeg svarer så fort jeg kan.</p>
-    </div>
-
-    <p class="updated">Sist oppdatert: juni 2026</p>
-
-  </main>
+</main>
 </body>
 </html>
